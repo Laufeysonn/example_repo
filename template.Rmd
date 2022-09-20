@@ -26,15 +26,7 @@ The mean is `r round(mean(samp),2)`.
 
 This is going to make a plot!
 
-```{r chunk_scatterplot}
-library(tidyverse)
-plot_df = tibble(
-  x = rnorm(1000, sd = .5),
-  y = 1 + 2 * x + rnorm(1000)
-)
 
-ggplot(plot_df, aes(x = x, y = y)) + geom_point()
-```
 
 ## what
 
